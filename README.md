@@ -9,11 +9,25 @@ This is a screenshot from POSTMAN(it's an app to make web requests) it returns a
 
 
 -------------
+# Installation
+
+You can download CoronaStatsAPI source code by cloning the [Git Repo](https://github.com/joeVenner/CoronaStatsAPI.git) and simply installing its requirements:
+
+```
+~ ❯❯❯ git clone https://github.com/joeVenner/CoronaStatsAPI.git
+
+~ ❯❯❯ cd CoronaStatsAPI/
+
+~/CoronaStatsAPI ❯❯❯ pip install -r requirements.txt
+
+~/CoronaStatsAPI ❯❯❯python CoronaStatsAPI.py
+
+```
+
 # Usage
 
 Make a Post or Get request to the link https://covidstatistics.herokuapp.com/usa <br/>
 You can change the 'usa' by any other country name like : india,uk,spain,france...
-
 
  
 ``` 
