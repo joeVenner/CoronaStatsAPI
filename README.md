@@ -20,7 +20,7 @@ You can download CoronaStatsAPI source code by cloning the [Git Repo](https://gi
 
 ~/CoronaStatsAPI ❯❯❯ pip install -r requirements.txt
 
-~/CoronaStatsAPI ❯❯❯python CoronaStatsAPI.py
+~/CoronaStatsAPI ❯❯❯flask CoronaStatsAPI.py
 
 ```
 
