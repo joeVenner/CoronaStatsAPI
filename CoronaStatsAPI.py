@@ -7,6 +7,8 @@ t1 = threading.Thread(target=data)
 t1.start()
 
 app = Flask(__name__)
+app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
+app.config['JSON_SORT_KEYS'] = False
 
 @app.route('/<string:country>',methods = ['GET', 'POST'])
 def getdata(country : str):
@@ -15,7 +17,7 @@ def getdata(country : str):
         country = country.upper()
     else:
         country = string.capwords(country)
-    names = ["Country","TotalCases","NewCases","TotalDeaths","NewDeaths","TotalRecovered","ActiveCases","SeriousCritical","TotCases/1m","Deaths/1m","TotalTests","Tests/1m","Continent"]
+    names = ["id","Country","TotalCases","NewCases","TotalDeaths","NewDeaths","TotalRecovered","ActiveCases","SeriousCritical","TotCases/1m","Deaths/1m","TotalTests","Tests/1m","-","Continent"]
 
 
     if alldata[country] != None :
