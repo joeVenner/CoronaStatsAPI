@@ -27,8 +27,8 @@ def data():
                 countrydata.append(cell.string)
 
             if countrydata[0] != None:
-                alldata[countrydata[0]] = countrydata
+                alldata[countrydata[1]] = countrydata
 
         alldata["lastupdate"]=div_next.text
-        print("db updated")
+      
         sleep(1800)
